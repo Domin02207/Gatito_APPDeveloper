@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:fontFamily="@font/new_tegomin"
+        android:text="Cadastro"
+        android:textColor="@color/white"
+        android:textColorLink="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/dog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:maxWidth="20dp"
+        android:maxHeight="20dp"
+        app:srcCompat="@drawable/dog1" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/new_tegomin"
+        android:hint="Digite seu Nome"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/new_tegomin"
+        android:hint="Digite seu Cpf"
+        android:inputType="text|number"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/new_tegomin"
+            android:hint="Digite seu E-mail"
+            android:inputType="text|textEmailAddress"
+            android:textColorHint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fontFamily="@font/new_tegomin"
+            android:hint="Digite sua Senha"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:fontFamily="@font/new_tegomin"
+        android:foregroundTint="@color/design_default_color_primary"
+        android:onClick="recuperar"
+        android:shadowColor="@color/design_default_color_primary"
+        android:text="Cadastrar"
+        android:textColor="@color/white"
+        android:textColorLink="@color/design_default_color_primary"
+        app:iconTint="#6200EE"
+        app:rippleColor="#2196F3"
+        app:strokeColor="@color/design_default_color_primary" />
+
+    <TextView
+        android:id="@+id/textlogotipo"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/new_tegomin"
+        android:text="Aqui o seu Pet é Nosso"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+</LinearLayout>
